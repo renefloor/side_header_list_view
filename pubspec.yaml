@@ -1,12 +1,17 @@
 name: side_header_list_view
 description: Listview with sticky headers on the side
 version: 0.0.1
-author: Rene Floor
-homepage:
+author: Rene Floor <pub@renefloor.nl>
+homepage: https://github.com/renefloor/side_header_list_view
+
+environment:
+  sdk: ">=1.8.0 <2.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
+  meta: "^1.1.1"
+
 
 dev_dependencies:
   test: ^0.12.0
