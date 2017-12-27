@@ -1,6 +1,6 @@
 name: side_header_list_view
 description: Listview with sticky headers on the side
-version: 0.0.1
+version: 0.0.2
 author: Rene Floor <pub@renefloor.nl>
 homepage: https://github.com/renefloor/side_header_list_view
 

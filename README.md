@@ -1,10 +1,12 @@
 # side_header_list_view
 
+[![pub package](https://img.shields.io/pub/v/side_header_list_view.svg)](https://pub.dartlang.org/packages/side_header_list_view)
+
 Listview with sticky headers like the Android contact page
 
 
 
-![alt text](https://raw.githubusercontent.com/renefloor/side_header_list_view/master/example.gif "Example fore SideHeaderListView")
+![alt text](https://raw.githubusercontent.com/renefloor/side_header_list_view/master/example.gif "Example for SideHeaderListView")
 
 ## Usage
 

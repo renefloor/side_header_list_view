@@ -48,7 +48,7 @@ class _SideHeaderListViewState extends State<SideHeaderListView> {
         new Positioned(
           child: new Opacity(
             opacity: _shouldShowHeader(currentPosition) ? 0.0 : 1.0,
-            child: widget.headerBuilder(context, currentPosition),
+            child: widget.headerBuilder(context, currentPosition >= 0 ? currentPosition : 0),
           ),
           top: 0.0,
           left: 0.0,
@@ -77,15 +77,23 @@ class _SideHeaderListViewState extends State<SideHeaderListView> {
   }
 
   bool _shouldShowHeader(int position) {
-    if (position == 0 || position == widget.itemCount - 1) {
-      return false;
+    if(position < 0){
+      return true;
     }
-    if (position != currentPosition &&
+    if (position == 0 && currentPosition < 0) {
+      return true;
+    }
+
+    if (
+      position != 0 &&
+      position != currentPosition &&
         !widget.hasSameHeader(position, position - 1)) {
       return true;
     }
 
-    if (!widget.hasSameHeader(position, position + 1) &&
+    if (
+      position != widget.itemCount -1 &&
+      !widget.hasSameHeader(position, position + 1) &&
         position == currentPosition) {
       return true;
     }
@@ -97,6 +105,7 @@ class _SideHeaderListViewState extends State<SideHeaderListView> {
     controller.addListener(() {
       var pixels = controller.offset;
       var newPosition = (pixels / widget.itemExtend).floor();
+
       if (newPosition != currentPosition) {
         setState(() {
           currentPosition = newPosition;
