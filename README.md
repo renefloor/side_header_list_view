@@ -1,6 +1,7 @@
 # side_header_list_view
 
 [![pub package](https://img.shields.io/pub/v/side_header_list_view.svg)](https://pub.dartlang.org/packages/side_header_list_view)
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/renefloor)
 
 Listview with sticky headers like the Android contact page
 
