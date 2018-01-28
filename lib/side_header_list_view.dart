@@ -50,8 +50,8 @@ class _SideHeaderListViewState extends State<SideHeaderListView> {
             opacity: _shouldShowHeader(currentPosition) ? 0.0 : 1.0,
             child: widget.headerBuilder(context, currentPosition >= 0 ? currentPosition : 0),
           ),
-          top: 0.0,
-          left: 0.0,
+          top: 0.0 + (widget.padding?.top ?? 0),
+          left: 0.0 + (widget.padding?.left ?? 0),
         ),
         new ListView.builder(
             padding: widget.padding,
