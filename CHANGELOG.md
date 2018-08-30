@@ -1,3 +1,6 @@
+## [0.0.4] - 2018-08-30
+* Update dart constraints
+
 ## [0.0.3] - 2018-01-28
 * Fixed list padding on header.
 
