@@ -1,3 +1,6 @@
+## [1.0.0-nullsafety.0] - 2021-01-07
+* Migrate to null safety
+
 ## [0.0.4] - 2018-08-30
 * Update dart constraints
 

@@ -1,7 +1,6 @@
 name: side_header_list_view
 description: ListView with sticky headers on the side. Inspired by the Android contacts app and the calendar app.
 version: 1.0.0-nullsafety.0
-author: Rene Floor <pub@renefloor.nl>
 homepage: https://github.com/renefloor/side_header_list_view
 
 environment:
